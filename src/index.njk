@@ -1,0 +1,11 @@
+---
+layout: layout
+---
+
+<h1>11ty Serverless.</h1>
+
+<ul>
+  {%- for post in microcms.news -%}
+  <li><a href="/news/{{ post.id }}">{{ post.title }}</a></li>
+  {%- endfor -%}
+</ul>

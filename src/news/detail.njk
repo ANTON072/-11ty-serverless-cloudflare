@@ -1,0 +1,14 @@
+---
+pagination:
+  data: microcms.news
+  size: 1
+  alias: news
+layout: layout
+permalink:
+  build: "/news/{{ news.id }}/index.html"
+  serverless: "/preview/news/{{ news.id }}/"
+---
+
+<h1>{{ news.title }}</h1>
+
+<div>{{ news.content }}</div>
